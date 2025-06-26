@@ -5,7 +5,7 @@ En un caso real, el montón de recursos que necesita una SPA que seriamente de a
 
 ## Sin cargas Diferidas
 
-![alt text](image.png)
+![alt text](aa.png)
 <center>Ejemplo de waterfall de un proyecto real de la empresa</center>
 
 <br>
