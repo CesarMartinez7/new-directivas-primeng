@@ -40,7 +40,7 @@ AQUI puedes ver un ejemplo de como `@defer` distribuye las cargas de recursos ba
 
 ![alt text](example.png)
 
-`@difer`: Directiva que se encarga de reducir el tamaño principal de un componente al momento de cargar.
+`@defer`: Directiva que se encarga de reducir el tamaño principal de un componente al momento de cargar.
 
 `@placeholder`: Es el bloque opcional que se va a mostrar mientras no se dispara el evento
 
