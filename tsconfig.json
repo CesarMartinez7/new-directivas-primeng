@@ -3,6 +3,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src/app",
+    "emitDecoratorMetadata": false,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -15,8 +17,8 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022"
+    "target": "ES2022", // Versión de ECMAScript para compilar
+    "module": "ES2022" // Sistema de módulos
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

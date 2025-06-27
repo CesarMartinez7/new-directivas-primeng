@@ -1,6 +1,13 @@
 <div
-  class="border flex justify-center items-center min-h-screen flex-col gap-4 w-full"
+  class=" flex justify-center items-center min-h-screen flex-col gap-4 w-full"
 >
+
+
+<h2>
+  Hello, learning
+</h2>
+
+<p-menubar [model]="items" />
   <div class="flex flex-col gap-8">
     <div class="col-span-3 row-start-4 border border-surface rounded-lg">6</div>
     <div
@@ -8,7 +15,6 @@
     >
       <span>{{ date ? date : "Aqui estara tu data." }}</span>
       <p-datepicker
-        formControlName="date"
         class="max-w-full"
         [(ngModel)]="date"
         [inline]="true"
@@ -114,6 +120,9 @@
       </p-dialog>
     </div>
 
+
+    <i class="pi pi-times"></i>
+
     <!-- Template Diferidos -->
 
     <!-- Carga diferida con viewport -->
@@ -122,7 +131,7 @@
     }@placeholder {
     <p>Soy tu placeholder 👩‍🚀, con la interaccion VIEWPORT</p>
     } 
-  
+
     
     <!-- Carga diferida con Hover -->
     @defer (on hover) {
@@ -145,7 +154,7 @@
       }
 
 
-      
+
 
 
     <div
@@ -181,23 +190,14 @@
         </p-table>
       </div>
     </div>
-  </div>
-</div>
+    <div class="border border-surface p-4 rounded-md w-full flex flex-col">
+      <span>Iconos Prime Ng</span>
+      <i class="pi pi-check" style="color: slateblue"></i>
 
-<div class="bg-zinc-400">
-  <div class="mt-[400px]">
-    @defer (on viewport; prefetch on idle) {
-    <p-radiobutton
-      name="pizza"
-      value="Cheese"
-      [(ngModel)]="ingredient"
-      inputId="ingredient1"
-    />
-    <label for="ingredient1" class="ml-2">Cheese</label>
-    }@loading {
-    <p>Cargandoooodsjfsdsflk</p>
-    }@placeholder {
-    <p>Place holder</p>
-    }
+    </div>
+    
   </div>
+
+
+
 </div>

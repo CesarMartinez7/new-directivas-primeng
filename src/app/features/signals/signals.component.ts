@@ -3,35 +3,43 @@ import { NgModel, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DatePickerModule } from 'primeng/datepicker';
-import { SingleFileApiComponent } from '../../components/component-large.component';
+
+
+import { InjectionToken } from '@angular/core';
+
+import { MenubarModule } from 'primeng/menubar';
 import {
-  AutoComplete,
   AutoCompleteCompleteEvent,
-  AutoCompleteDropdownClickEvent,
   AutoCompleteSelectEvent,
 } from 'primeng/autocomplete';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { InputTextModule } from 'primeng/inputtext';
+
+
+
+import { ProductService } from 'services/product.service';
+import { SingleFileApiComponent } from 'components/component-large.component';
+
+
 import { ToastCloseEvent, ToastModule } from 'primeng/toast';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DialogModule } from 'primeng/dialog';
 import { TableModule } from 'primeng/table';
-import { ProductService } from '../../services/product.service';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ButtonModule } from 'primeng/button';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { ToggleSwitchModule,  } from 'primeng/toggleswitch';
 import { SelectModule } from 'primeng/select';
-import { FormGroup, FormBuilder } from '@angular/forms';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { Checkbox } from 'primeng/checkbox';
 import { KeyFilterModule } from 'primeng/keyfilter';
 
-import { HttpClient } from '@angular/common/http';
-import { RadioButtonModule } from 'primeng/radiobutton';
 
+
+import { RadioButtonModule } from 'primeng/radiobutton';
 import { PasswordModule } from 'primeng/password';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-signals',
@@ -48,6 +56,7 @@ import { PasswordModule } from 'primeng/password';
     TableModule,
     InputTextModule,
     AutoCompleteModule,
+    SingleFileApiComponent,
     ReactiveFormsModule,
     FormsModule,
     SelectModule,
@@ -58,7 +67,7 @@ import { PasswordModule } from 'primeng/password';
     InputNumberModule,
     FloatLabelModule,
     Checkbox,
-    SingleFileApiComponent
+    MenubarModule
   ],
   templateUrl: './signals.component.html',
 })
@@ -68,7 +77,7 @@ export class SignalsComponent {
 
   ingredient = '';
 
-  
+  items : MenuItem[] = [{label: "Hello world" }, {label: "Hello world" }, {label: "Hello world" }, {label: "Hello world" } ]
 
   text2 = '';
 
@@ -79,15 +88,11 @@ export class SignalsComponent {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.products = this.ProductosServices.getProductsData();
-
-    this.form = this.fb.group({
-      date: '',
-    });
   }
 
-  form!: FormGroup;
+  
 
-  constructor(private fb: FormBuilder) {}
+  constructor() {}
   value = '';
   date = '';
 

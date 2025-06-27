@@ -4,7 +4,8 @@ import { SignalsComponent } from './features/signals/signals.component';
 export const routes: Routes = [
     {
         path: "",
-        component: SignalsComponent
+        component: SignalsComponent,
+        title: "Hello, learning"
     }
 
 ];
