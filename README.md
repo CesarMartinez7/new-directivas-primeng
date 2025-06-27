@@ -54,11 +54,4 @@ AQUI puedes ver un ejemplo de como `@defer` distribuye las cargas de recursos ba
 [Documentacion oficial de Angular](https://angular.dev/guide/templates/defer)
 
 
-
-## **Video Ejemplo Waterfull @defer**
-
-<video width="full" height="340" controls>
-  <source src="recort.mp4" type="video/mp4">
-</video>
-
-Con `@defer`, las cargas se distribuyen estratégicamente, asegurando que tu aplicación sea más rápida y eficiente, ofreciendo una mejor experiencia tanto para tus usuarios como para los motores de búsqueda.
+Con `@defer`, las cargas se distribuyen estrategicamente, asegurando que tu aplicación sea más rápida y eficiente, ofreciendo una mejor experiencia tanto para tus usuarios como para los motores de búsqueda.
