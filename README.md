@@ -44,7 +44,7 @@ AQUI puedes ver un ejemplo de como `@defer` distribuye las cargas de recursos ba
 
 `@placeholder`: Es el bloque opcional que se va a mostrar mientras no se dispara el evento
 
-`@loading`: Es el bloque de codigo que se ejecuta en la carga del componente y sus recursos
+`@loading`: Es el bloque que se muestra mientras se carga el componente y sus recursos
 
 `@error` : Es cuando se ejecuta algun error en la carga de componente
 
@@ -54,4 +54,4 @@ AQUI puedes ver un ejemplo de como `@defer` distribuye las cargas de recursos ba
 [Documentacion oficial de Angular](https://angular.dev/guide/templates/defer)
 
 
-Con `@defer`, las cargas se distribuyen estrategicamente, asegurando que tu aplicación sea más rápida y eficiente, ofreciendo una mejor experiencia tanto para tus usuarios como para los motores de búsqueda.
+Con `@defer`, las cargas se distribuyen estrategicamente, asegurando que tu aplicación sea más rapida y eficiente, ofreciendo una mejor experiencia tanto para tus usuarios como para los motores de búsqueda.
