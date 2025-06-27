@@ -1,8 +1,6 @@
 # Optimizacion con las cargas diferidas de Angular 17+
 
 
-En un caso real, el montón de recursos que necesita una SPA que seriamente de alguna manera son innecesarios al cargar la pagina
-
 ## Sin cargas Diferidas
 
 ![alt text](aa.png)
