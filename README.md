@@ -64,6 +64,3 @@ AQUI puedes ver un ejemplo de como `@defer` distribuye las cargas de recursos ba
 </video>
 
 Con `@defer`, las cargas se distribuyen estratégicamente, asegurando que tu aplicación sea más rápida y eficiente, ofreciendo una mejor experiencia tanto para tus usuarios como para los motores de búsqueda.
-
-
-# primeng-angular
