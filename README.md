@@ -1,4 +1,4 @@
-# Optimizacion con las cargas diferidas de Angular 17+
+# Optimizacion con las Cargas Diferidas de Angular 17+
 
 
 ## Sin cargas Diferidas
